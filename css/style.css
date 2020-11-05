@@ -25,6 +25,7 @@ nav {
     width: 100%;
     display: flex;
     justify-content: center;
+    z-index: 1;
 }
 
 .nav-link {
@@ -41,6 +42,7 @@ nav {
 
 .nav-link:hover {
     background-color: #403d39;
+    transition: 0.3s;
 }
 
 .current-page-link {
@@ -62,18 +64,21 @@ nav {
 }
 
 .social-img:hover {
-    filter: invert(30%)
+    filter: invert(30%);
+    transition: 0.3s;
 }
 
 footer {
-    position: absolute;
-    bottom: 0;
     width: 100%;
 }
+footer:hover {
+    color: #eb5e28;
+    transition: 0.3s;
+}
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 548px) {
     nav {
-        position: absolute;
+        position: fixed;
         top: 0;
         left: 0;
     }
@@ -84,6 +89,7 @@ footer {
         height: auto;
         width: 80%;
     }
+
     .subtitle {
         position: relative;
         bottom: 25px;
@@ -94,6 +100,114 @@ footer {
     }
     footer {
         position: relative;
+        top: 20px; 
+    }
+}
+
+@media only screen and (max-width: 1300px) and (min-width: 548px) {
+    .nav-link {
+        width: 25%;
+        font-size: 30px;
+        padding-top: 25px;
+        padding-bottom: 30px;
+    }
+    #profilepic {
+        width: 45%;
+        top: 30px;
+        right: 190px;
+    }
+    #home-blurb {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+        margin-left: 10%;
+        margin-right: 10%;
+        margin-top: 40px;
+    }
+    #name-sub {
+        position: relative;
         top: 20px;
+    }
+    .name-heading {
+        position: relative;
+        top: 25px;
+        font-size: 4em;
+    }
+    .subtitle {
+        font-size: 2em;
+    }
+    .home-content {
+        margin-left: 20%;
+        margin-right: 20%;
+        position: relative;
+        top: 50px;
+        font-size: 1.5em;   
+    }
+    .social-img {
+        position: relative;
+        top: 60px;
+    }
+    .page-foot {
+       position: relative;
+       top: 100px;
+    }
+}
+@media only screen and (min-width: 1300px) {
+    nav {
+        flex-direction: column;
+        position: fixed;
+        left: 0;
+        top: 0;
+        height: 100%;
+        width: 10%;
+        background-color: #252422;
+        justify-content: left;
+    }
+    .nav-link {
+        width: 100%;
+        font-size: 20px;
+        padding-top: 25px;
+        padding-bottom: 30px;
+    }
+    #profilepic {
+        width: 45%;
+        top: 20px;
+        right: 190px;
+    }
+    #home-blurb {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+    #name-sub {
+        position: relative;
+        top: 10px;
+    }
+    .name-heading {
+        position: relative;
+        top: 25px;
+        font-size: 4em;
+    }
+    .subtitle {
+        font-size: 2em;
+    }
+    .home-content {
+        margin-left: 22.5%;
+        margin-right: 17.5%;
+        position: relative;
+        top: 20px;
+        font-size: 1.5em;
+    }
+    .social-img {
+        position: relative;
+        top: 20px;
+    }
+    footer {
+        position: relative;
+        top: 40px;
     }
 }
