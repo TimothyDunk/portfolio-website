@@ -1,0 +1,99 @@
+body {
+    font-family: 'Quicksand', sans-serif;
+    background-color: #fffcf2;
+    color: #252422;
+    text-align: center;
+}
+h1 {
+    font-family: 'Fira Sans', sans-serif;
+}
+p {
+    color: #403d39;
+}
+a {
+    text-decoration: none;
+    color: #252422;
+}
+
+a:visited {
+    color: #252422;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.nav-link {
+     background-color: #252422;
+     color: #fffcf2;
+     width: 100px;
+     height: 30px;
+     padding-top: 10px;
+}
+
+.nav-link:visited {
+    color: #fffcf2;
+}
+
+.nav-link:hover {
+    background-color: #403d39;
+}
+
+.current-page-link {
+    background-color: #403d39;
+}
+
+#profilepic {
+    height: auto;
+    width: 200px;
+    border-radius: 50%;
+    margin-top: 60px;
+}
+
+.social-img {
+    height: auto;
+    width: 50px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.social-img:hover {
+    filter: invert(30%)
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+@media only screen and (max-width: 500px) {
+    nav {
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+    .nav-link {
+        width: 25%
+    }
+    #profilepic {
+        height: auto;
+        width: 80%;
+    }
+    .subtitle {
+        position: relative;
+        bottom: 25px;
+    }
+    .home-content {
+        position: relative;
+        bottom: 15px;
+    }
+    footer {
+        position: relative;
+        top: 20px;
+    }
+}
