@@ -191,6 +191,10 @@ footer:hover {
         position: relative;
         bottom: 15px;
     }
+    /* h1 in about page is moved down */
+    #about-heading {
+        margin-top: 50px;
+    }
     /* keep blog content away from sides and down away from nav bar */
     #blog-section {
         margin-left: 10%;
@@ -360,6 +364,11 @@ footer:hover {
         width: 40%;
         margin-top: 30px;
     }
+    /* give more space between about page social links
+    and element above them */
+    #about-socials {
+        margin-top: 50px;
+    }
     /* keep blog content away from sides and down away from nav bar */
     #blog-section {
         margin-left: 10%;
@@ -402,6 +411,10 @@ footer:hover {
     /* move footer away from content for blog page */
     #blog-foot {
         top: 75px;
+    }
+    /* move footer away from content for about page */
+    #about-foot {
+        margin-top: 20px;
     }
 
 }
