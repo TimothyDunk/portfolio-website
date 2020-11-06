@@ -13,11 +13,11 @@
         <nav>
             <a href="../index.html" class="nav-link">HOME</a>
             <a href="about.html" class="nav-link">ABOUT</a>
-            <a href="blog.html" class="nav-link current-page-link">BLOG</a>
-            <a href="contact.html" class="nav-link">CONTACT</a>
+            <a href="blog.html" class="nav-link">BLOG</a>
+            <a href="contact.html" class="nav-link current-page-link">CONTACT</a>
         </nav>
     </header>
-    <main>
+    <main id="contact-cont">
         <h1>Contact Me</h1>
         <h2>Fill out this Form and I'll get back to you.</h2>
         <form id="contact-form">
@@ -29,13 +29,15 @@
             <input type="text" id="phone-input">
             <label for="mess-input">Message</label>
             <textarea id="mess-input"></textarea>
-            <button type="submit">Submit</button>
+            <button type="submit" id="sub-button">Submit</button>
         </form>
-        <h2>Or find me on these socials:</h2>
-        <a href="" class="social-link"><img src="../img/github.svg" type="svg" alt="github" class="social-img icon"></a>
-        <a href="" class="social-link"><img src="../img/linkedin.svg" type="svg" alt="linkedin" class="social-img icon"></a>
-        <a href="" class="social-link"><img src="../img/codepen.svg" type="svg" alt="codepen" class="social-img icon"></a>
+        <div id="social-section">
+            <h2>Or find me on these socials:</h2>
+            <a href="" class="social-link"><img src="../img/github.svg" type="svg" alt="github" class="social-img icon"></a>
+            <a href="" class="social-link"><img src="../img/linkedin.svg" type="svg" alt="linkedin" class="social-img icon"></a>
+            <a href="" class="social-link"><img src="../img/codepen.svg" type="svg" alt="codepen" class="social-img icon"></a>
+        </div>
     </main>
-    <footer class="page-foot">© Tim Dunk 2020</footer>
+    <footer id="cont-foot" class="page-foot">© Tim Dunk 2020</footer>
 </body>
 </html>

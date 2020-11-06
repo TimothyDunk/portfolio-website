@@ -129,6 +129,19 @@ ul {
 input, textarea, button {
     align-self: center;
 }
+/* contact form submit button styling */
+#sub-button {
+    background-color: #252422;
+    color: #fffcf2;
+    border: 0;
+    border-radius: 100%; 
+    padding: 25px 10px 25px 10px;
+    font-size: 1em;
+}
+#sub-button:hover {
+    background-color: #403d39;
+    transition: 0.3s;
+}
 /* makes the footer div take up the whole page so the footer text
 can be centred through text-align property in body */
 footer {
@@ -180,8 +193,22 @@ footer:hover {
         position: relative;
         top: 45px;        
     }
-    
-    /* orange divider line for about section */
+    /* move content of contact page down to avoid nav bar */
+    #contact-cont {
+        margin-top: 50px;
+    }
+    /* text area in contact form made bigger */
+    #mess-input {
+        margin-bottom: 10px;
+        padding-bottom: 25px;
+    }
+    /* move contact form socials section down */
+    #social-section {
+        position: relative;
+        top: 50px;
+    }
+
+    /* orange divider line */
     .divider-line {
         background-color: #eb5e28;
         width: 100%;
@@ -192,6 +219,10 @@ footer:hover {
     /* move footer away from content for blog page */
     #blog-foot {
         top: 40px;
+    }
+    /* move footer to bottom for contact page */
+    #cont-foot {
+        top: 100px;
     }
     /* footer moved 20px down from where it was sitting */
     footer {
@@ -331,7 +362,7 @@ footer:hover {
         position: relative;
         top: 80px;        
     }
-    /* orange divider line for about section */
+    /* orange divider line */
     .divider-line {
         background-color: #eb5e28;
         width: 100%;
@@ -339,14 +370,25 @@ footer:hover {
         position: relative;
         top: 10px;
         }
+    /* move orange divider for blog section */
     .blog-div {
         margin-bottom: 20px;
-    }        
-    /* social icons are moved 60px down */
-    .social-img {
-        position: relative;
-        top: 60px;
     }
+    /* move content of contact page down to avoid nav bar */
+    #contact-cont {
+        margin-top: 100px;
+    }
+    /* text area in contact form made bigger */
+    #mess-input {
+        margin-bottom: 10px;
+        padding-bottom: 25px;
+    }
+    /* move contact form socials section down */
+    #social-section {
+        position: relative;
+        top: 40px;
+    }        
+    
     /* footer is moved down by 100px */
     .page-foot {
        position: relative;
@@ -356,6 +398,7 @@ footer:hover {
     #blog-foot {
         top: 75px;
     }
+
 }
 
 /*laptops and desktops */
