@@ -120,6 +120,15 @@ ul {
     height: auto;
     width: 50%;
 }
+/* contact form formatting */
+#contact-form {
+    display: flex;
+    flex-direction: column;
+}
+/* stop form elements from stretching to fill page */
+input, textarea, button {
+    align-self: center;
+}
 /* makes the footer div take up the whole page so the footer text
 can be centred through text-align property in body */
 footer {
