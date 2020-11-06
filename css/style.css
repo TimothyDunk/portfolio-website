@@ -430,6 +430,9 @@ footer:hover {
         padding-top: 25px;
         padding-bottom: 30px;
     }
+    h1 {
+        font-size: 3em;
+    }
     /* pic on home is further down and to the left */
     #profilepic {
         width: 45%;
@@ -472,6 +475,8 @@ footer:hover {
     /* h1 in about page is moved down and font increases to 3em */
     #about-heading {
         font-size: 3em;
+        position: relative;
+        left: 30px;
     }
     /* pic in about is centred to stop stretching by flexbox 
     and resized to 30% of screen width  */
@@ -498,6 +503,11 @@ footer:hover {
     .about-exp-content {
         position: relative;
         bottom: 10px;
+        font-size: 1.5em;
+    }
+    /* increase h2 font size on about page */
+    .about-h2 {
+        font-size: 2em;
     }
     /* first image on about page is moved to the right */
     #about-img-1 {
@@ -574,6 +584,24 @@ footer:hover {
     .blog-img {
         width: 300px;
     }
+    /* text area in contact form made bigger */
+    #mess-input {
+        margin-bottom: 10px;
+        padding-bottom: 25px;
+    }
+    /* move contact form socials section down */
+    #social-section {
+        position: relative;
+        top: 10px;
+    }
+    /* move contact form social icons closer to heading, 
+    move footer away */
+    #contact-social-icon {
+        position: relative;
+        bottom: 20px;
+        margin-bottom: 10px;
+    }
+    
     /* footer moved 40px down */
     footer {
         position: relative;
