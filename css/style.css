@@ -1,3 +1,4 @@
+/* General font and colour styling across pages */
 body {
     font-family: 'Quicksand', sans-serif;
     background-color: #fffcf2;
@@ -19,15 +20,23 @@ a:visited {
     color: #252422;
 }
 
+/* nav bar */
+
 nav {
+    /* fixed at top of window, even when scrolling */
     position: fixed;
     top: 0;
+    
+    /* width takes up full window and is centred */
     width: 100%;
     display: flex;
     justify-content: center;
+    
+    /* nav bar is above every other layer */
     z-index: 1;
 }
 
+/* colour and size of buttons on nav bar */
 .nav-link {
      background-color: #252422;
      color: #fffcf2;
@@ -40,67 +49,78 @@ nav {
     color: #fffcf2;
 }
 
+/* button changes colour while hovered over */
+
 .nav-link:hover {
     background-color: #403d39;
     transition: 0.3s;
 }
 
+/* the button of the current page is a different colour */
+
 .current-page-link {
     background-color: #403d39;
 }
 
+/* home page picture */
 #profilepic {
     height: auto;
     width: 200px;
+/* makes it a circle */
     border-radius: 50%;
+/* positioning away from nav bar */
     margin-top: 60px;
 }
+/* resizing pictures in about section */
 .about-pic {
     height: auto;
     width: 200px;
+/* makes circular */
     border-radius: 50%;
 }
 
+/* resizing icons for skills in about section and github,
+linkedin, and codepen links */
 .icon {
         height: auto;
     width: 50px;
 }
 
-.skill-icon:hover {
+/* on hover icons change colour like nav bar buttons */
+.icon:hover {
     filter: invert(30%);
     transition: 0.3s;
 }
 
+/* spacing social icons from eachother */
 .social-img {
 
     margin-left: 10px;
     margin-right: 10px;
 }
 
-.social-img:hover {
-    filter: invert(30%);
-    transition: 0.3s;
-}
-
+/* remove dot points from list of skills */
 #skill-list {
     list-style: none;
 }
-
-
+/* make list items a centred column within themselves
+e.g. Semantic HTML text is centred beneath its icon */
 li {
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-bottom: 10px;
-}
-
+} 
+/* remove default padding in unordered list which indents it from the left */
 ul {
     padding: 0;
 }
-
+/* makes the footer div take up the whole page so the footer text
+can be centred through text-align property in body */
 footer {
     width: 100%;
 }
+/* footer text turns orange when hovered over */
 footer:hover {
     color: #eb5e28;
     transition: 0.3s;
@@ -109,28 +129,37 @@ footer:hover {
 /* For phones */
 
 @media only screen and (max-width: 548px) {
+    /* nav bar sits all the way to the top and left of screen and
+    stays when scrolled */
     nav {
         position: fixed;
         top: 0;
         left: 0;
     }
+
+    /* nav buttons each take up 25% of the screen's width, meaning they
+    will take up the whole screen */
     .nav-link {
         width: 25%
     }
+
+    /* resizing homepage pic for phone */
     #profilepic {
         height: auto;
         width: 80%;
     }
 
+    /* text that says web developer on homepage sits closer to h1 */
     .subtitle {
         position: relative;
         bottom: 25px;
     }
+    /* paragraph on homepage is moved up from where it was sitting */
     .home-content {
         position: relative;
         bottom: 15px;
     }
-
+    /* orange divider line for about section */
     .divider-line {
         background-color: #eb5e28;
         width: 100%;
@@ -138,6 +167,7 @@ footer:hover {
         position: relative;
         bottom: 10px;
     }
+    /* footer moved 20px down from where it was sitting */
     footer {
         position: relative;
         top: 20px; 
@@ -147,17 +177,22 @@ footer:hover {
 /* For Tablets */
 
 @media only screen and (max-width: 1300px) and (min-width: 548px) {
+    /* button width at 25% to take up whole screen with nav bars
+    font and height of button increased as well */
     .nav-link {
         width: 25%;
         font-size: 30px;
         padding-top: 25px;
         padding-bottom: 30px;
     }
+    /* picture on homepage changes size and is moved down and to the left */
     #profilepic {
         width: 45%;
         top: 30px;
         right: 190px;
     }
+    /* home img and div with name and subtitle sit next to each other in a
+    flex row */
     #home-blurb {
         display: flex;
         flex-direction: row;
@@ -167,18 +202,22 @@ footer:hover {
         margin-right: 10%;
         margin-top: 40px;
     }
+    /* name and subtitle move 20px down */
     #name-sub {
         position: relative;
         top: 20px;
     }
+    /* h1 with name moves 25px down and font is increased to 4em */
     .name-heading {
         position: relative;
         top: 25px;
         font-size: 4em;
     }
+    /* subtitle font is increased to 2em */
     .subtitle {
         font-size: 2em;
     }
+    /* long paragraph on home is narrowed by margin and moved down */
     .home-content {
         margin-left: 20%;
         margin-right: 20%;
@@ -186,37 +225,93 @@ footer:hover {
         top: 50px;
         font-size: 1.5em;   
     }
+    /* h1 in about page is moved down and font increases to 3em */
     #about-heading {
         margin-top: 100px;
         font-size: 3em;
     }
+    /* pic in about is centred to stop stretching by flexbox 
+    and resized to 30% of screen width  */
     .about-pic {
         width: 30%;
+        align-self: center;
     }
+    /* about experience section is layed out so image sits next to
+    text content */
     #about-exp {
         display: flex;
         flex-direction: row;
-        flex-wrap: wrap;
+        justify-items: center;
+        margin-left: 50px;
     }
+    /* experience text content is moved away from edge of screen on right
+    and image on left */
     #exp-content {
-        position: relative;
-        bottom: 200px;
-        left: 100px;
+        margin-left: 5%;
+        margin-right: 10%;
     }
+    /* paragraph in experience section is moved upwards, closer to heading */
     .about-exp-content {
-        padding-left: 30%;
-        padding-right: 30%;
         position: relative;
         bottom: 10px;
     }
+    /* first image on about page is moved to the right */
     #about-img-1 {
-        padding-left: 20px;
-
+        margin-left: 5%;
     }
+    /* skill section in about is layed out so image sits next to
+    text content but with the image on the right */
+    #about-skill {
+        display: flex;
+        flex-direction: row-reverse;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+    /* first row of skill icons */
+    #skills1 {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin-right: 20px;
+    }
+    /* second row of skill icons */
+    #skills2 {
+        display: flex;
+        flex-direction: row-reverse;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin-right: 20px;
+        margin-top: 20px;
+    }
+    /* individual skill list items are surrounded on left and right
+    by 20px of white space */
+    .skill-item {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    /* second image on about page is spaced 30px from element above
+    to prevent text above from becoming unreadable when resized too small
+    width is 40% of page width */
+    #about-img-2 {
+        width: 40%;
+        margin-top: 30px;
+    }
+    /* orange divider line for about section */
+    .divider-line {
+        background-color: #eb5e28;
+        width: 100%;
+        height: 1px;
+        position: relative;
+        top: 10px;
+        }        
+    /* social icons are moved 60px down */
     .social-img {
         position: relative;
         top: 60px;
     }
+    /* footer is moved down by 100px */
     .page-foot {
        position: relative;
        top: 100px;
@@ -226,27 +321,40 @@ footer:hover {
 /*laptops and desktops */
 
 @media only screen and (min-width: 1300px) {
+    /* change nav bar to a column on the side */
     nav {
         flex-direction: column;
         position: fixed;
         left: 0;
         top: 0;
+        /* height is the full screen */
         height: 100%;
+        /* width is now changed to 10% so the whole
+        screen isn't the nav bar */
         width: 10%;
+        /* give the div a background color so the bar visually fills the
+        whole height */
         background-color: #252422;
+        /* buttons start at top of page, rather than being centred */
         justify-content: left;
     }
+    /* nav buttons */
     .nav-link {
+        /* buttons can now take up the entire width of the div
+        because the div only takes up 10% of the page */
         width: 100%;
         font-size: 20px;
         padding-top: 25px;
         padding-bottom: 30px;
     }
+    /* pic on home is further down and to the left */
     #profilepic {
         width: 45%;
         top: 20px;
         right: 190px;
     }
+    /* home img and div with name and subtitle sit next to each other in a
+    flex row */
     #home-blurb {
         display: flex;
         flex-direction: row;
@@ -255,18 +363,22 @@ footer:hover {
         margin-left: 10%;
         margin-right: 10%;
     }
+    /* move h1 and subtitle down 10px */
     #name-sub {
         position: relative;
         top: 10px;
     }
+    /* h1 on homepage is moved 25px down and its font size is changed */
     .name-heading {
         position: relative;
         top: 25px;
         font-size: 4em;
     }
+    /* subtitle on homepage font size is 2em */
     .subtitle {
         font-size: 2em;
     }
+    /* big paragraph on home, width adjusted using margin, moved 20px down */
     .home-content {
         margin-left: 22.5%;
         margin-right: 17.5%;
@@ -274,10 +386,86 @@ footer:hover {
         top: 20px;
         font-size: 1.5em;
     }
+    /* h1 in about page is moved down and font increases to 3em */
+    #about-heading {
+        font-size: 3em;
+    }
+    /* pic in about is centred to stop stretching by flexbox 
+    and resized to 30% of screen width  */
+    .about-pic {
+        width: 30%;
+        align-self: center;
+    }
+    /* about experience section is layed out so image sits next to
+    text content */
+    #about-exp {
+        display: flex;
+        flex-direction: row;
+        justify-items: center;
+        align-items: center;
+        margin-left: 100px;
+    }
+    /* experience text content is moved away from edge of screen on right
+    and image on left */
+    #exp-content {
+        margin-left: 5%;
+        margin-right: 10%;
+    }
+    /* paragraph in experience section is moved upwards, closer to heading */
+    .about-exp-content {
+        position: relative;
+        bottom: 10px;
+    }
+    /* first image on about page is moved to the right */
+    #about-img-1 {
+        margin-left: 5%;
+    }
+    /* skill section in about is layed out so image sits next to
+    text content but with the image on the right */
+    #about-skill {
+        display: flex;
+        flex-direction: row-reverse;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        margin-left: 50px;
+    }
+    /* first row of skill icons */
+    #skills1 {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin-right: 20px;
+    }
+    /* second row of skill icons */
+    #skills2 {
+        display: flex;
+        flex-direction: row-reverse;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin-right: 20px;
+        margin-top: 20px;
+    }
+    /* individual skill list items are surrounded on left and right
+    by 20px of white space */
+    .skill-item {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    /* second image on about page is spaced 30px from element above
+    to prevent text above from becoming unreadable when resized too small
+    width is 40% of page width */
+    #about-img-2 {
+        width: 40%;
+        margin-top: 30px;
+    }
+    /* social icons moved 20px down */
     .social-img {
         position: relative;
         top: 20px;
     }
+    /* footer moved 40px down */
     footer {
         position: relative;
         top: 40px;
