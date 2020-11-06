@@ -138,10 +138,15 @@ input, textarea, button {
     padding: 25px 10px 25px 10px;
     font-size: 1em;
 }
+/* contact form submit button changes color on hover */
 #sub-button:hover {
     background-color: #403d39;
     transition: 0.3s;
 }
+/* change font weight on h2 in contact */
+.cont-h2 {
+    font-weight: 400;
+} 
 /* makes the footer div take up the whole page so the footer text
 can be centred through text-align property in body */
 footer {
