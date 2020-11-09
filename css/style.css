@@ -4,6 +4,8 @@ body {
     background-color: #fffcf2;
     color: #252422;
     text-align: center;
+    /* remove default margin on body */
+    margin: 0 0 0 0;
 }
 h1 {
     font-family: 'Fira Sans', sans-serif;
@@ -78,7 +80,15 @@ nav {
 /* makes circular */
     border-radius: 50%;
 }
-
+/* add margin below experience secion of about page */
+#about-exp {
+    margin-bottom: 50px;
+}
+/* add margin above and below skills section of about page */
+#about-skill {
+    margin-top: 40px;
+    margin-bottom: 50px;
+}
 /* resizing icons for skills in about section and github,
 linkedin, and codepen links */
 .icon {
@@ -190,6 +200,9 @@ footer:hover {
     .home-content {
         position: relative;
         bottom: 15px;
+        /* content further from sides of screen */
+        margin-left: 20%;
+        margin-right: 20%;
     }
     /* h1 in about page is moved down */
     #about-heading {
@@ -266,7 +279,7 @@ footer:hover {
         justify-content: space-around;
         margin-left: 10%;
         margin-right: 10%;
-        margin-top: 40px;
+        margin-top: 100px;
     }
     /* name and subtitle move 20px down */
     #name-sub {
@@ -285,8 +298,10 @@ footer:hover {
     }
     /* long paragraph on home is narrowed by margin and moved down */
     .home-content {
-        margin-left: 20%;
-        margin-right: 20%;
+        margin-left: 25%;
+        margin-right: 25%;
+        margin-bottom: 20%;
+        margin-top: 10%;
         position: relative;
         top: 50px;
         font-size: 1.5em;   
@@ -486,6 +501,8 @@ footer:hover {
     .home-content {
         margin-left: 22.5%;
         margin-right: 17.5%;
+        margin-top: 5%;
+        margin-bottom: 10%;
         position: relative;
         top: 20px;
         font-size: 1.5em;
