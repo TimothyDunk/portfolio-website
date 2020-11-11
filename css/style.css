@@ -139,6 +139,15 @@ ul {
     height: auto;
     width: 50%;
 }
+/* border around portfolio image */
+.port-img {
+    border: 2px solid #403d39;
+}
+/* date for blog posts italic and grey */
+.blog-date {
+    font-style: italic;
+    color: #646362;
+}
 /* contact form formatting */
 #contact-form {
     display: flex;
