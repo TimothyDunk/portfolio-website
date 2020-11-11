@@ -59,10 +59,29 @@ nav {
     background-color: #403d39;
     transition: 0.3s;
 }
-/* stop portfolio button from being squished in resizing */
+
+/* min width for nav buttons to stop squishing text when resizing */
+/* home button */
+#home-button {
+    min-width: 60px;
+}
+/* about button */
+#about-button {
+    min-width: 60px;
+}
+/* portfolio button */
 #port-button {
     min-width: 100px;
 }
+/* blog button */
+#blog-button {
+    min-width: 60px;
+}
+/* contact button */
+#cont-button {
+    min-width: 80px;
+}
+
 /* margin below portfolio posts */
 .port-post {
     margin-bottom: 30px;
