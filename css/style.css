@@ -194,7 +194,7 @@ input, textarea, button {
 .cont-h2 {
     font-weight: 400;
 } 
-/* underline links on portfolio page */
+/* underline text links on portfolio page and about page */
 .text-link {
     text-decoration: underline;
 }
