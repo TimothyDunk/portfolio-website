@@ -22,6 +22,8 @@ a:visited {
     color: #252422;
 }
 
+
+
 /* nav bar */
 
 nav {
@@ -57,7 +59,14 @@ nav {
     background-color: #403d39;
     transition: 0.3s;
 }
-
+/* stop portfolio button from being squished in resizing */
+#port-button {
+    min-width: 100px;
+}
+/* margin below portfolio posts */
+.port-post {
+    margin-bottom: 30px;
+}
 /* the button of the current page is a different colour */
 
 .current-page-link {
@@ -157,6 +166,10 @@ input, textarea, button {
 .cont-h2 {
     font-weight: 400;
 } 
+/* underline links on portfolio page */
+.portfolio-link {
+    text-decoration: underline;
+}
 /* makes the footer div take up the whole page so the footer text
 can be centred through text-align property in body */
 footer {
@@ -166,6 +179,10 @@ footer {
 footer:hover {
     color: #eb5e28;
     transition: 0.3s;
+}
+/* more margin above for footer in portfolio page */
+#port-foot {
+    margin-top: 50px;
 }
 
 /* For phones */
@@ -179,10 +196,10 @@ footer:hover {
         left: 0;
     }
 
-    /* nav buttons each take up 25% of the screen's width, meaning they
+    /* nav buttons each take up 20% of the screen's width, meaning they
     will take up the whole screen */
     .nav-link {
-        width: 25%
+        width: 20%
     }
 
     /* resizing homepage pic for phone */
@@ -235,8 +252,8 @@ footer:hover {
         background-color: #eb5e28;
         width: 100%;
         height: 1px;
-        position: relative;
-        bottom: 10px;
+        margin-top: 10px;
+        margin-bottom: 10px;
     }
     /* move footer away from content for blog page */
     #blog-foot {
@@ -259,8 +276,8 @@ footer:hover {
     /* button width at 25% to take up whole screen with nav bars
     font and height of button increased as well */
     .nav-link {
-        width: 25%;
-        font-size: 30px;
+        width: 20%;
+        font-size: 1.2em;
         padding-top: 25px;
         padding-bottom: 30px;
     }
@@ -610,14 +627,19 @@ footer:hover {
         margin-left: 15%;
         margin-right: 10%;   
     }
-    /* margin between blog posts */
-    .blog-post {
+    /* margin between blog and portfolio posts */
+    .post {
         padding-left: 20px;
         padding-right: 20px;
     }
     /* resize blog images */
     .blog-img {
         width: 300px;
+    }
+    /* portfolio piece description margin increased */
+    .port-desc {
+        margin-left: 20px;
+        margin-right: 20px;
     }
     /* text area in contact form made bigger */
     #mess-input {
