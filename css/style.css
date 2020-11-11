@@ -195,7 +195,7 @@ input, textarea, button {
     font-weight: 400;
 } 
 /* underline links on portfolio page */
-.portfolio-link {
+.text-link {
     text-decoration: underline;
 }
 /* makes the footer div take up the whole page so the footer text
